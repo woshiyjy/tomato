@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>壹起嗨番公司简介</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            overflow-x: hidden;
+        }
+        .header {
+            padding: 40px;
+            position: relative;
+        }
+        .circle-decoration {
+            position: absolute;
+            border-radius: 50%;
+            z-index: -1;
+        }
+        .circle-1 {
+            top: -100px;
+            left: -100px;
+            width: 300px;
+            height: 300px;
+            background-color: #FF4B4B;
+        }
+        .circle-2 {
+            top: 50px;
+            right: 100px;
+            width: 150px;
+            height: 150px;
+            background-color: #FFD700;
+        }
+        .circle-3 {
+            bottom: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            background-color: #FF4B4B;
+        }
+        .logo {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+        .title {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+        }
+        .intro-text {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 30px;
+            background-color: #f8f8f8;
+            padding: 30px;
+            border-radius: 15px;
+        }
+        .farm-image {
+            width: 100%;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        #chat-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="circle-decoration circle-1"></div>
+        <div class="circle-decoration circle-2"></div>
+        <div class="circle-decoration circle-3"></div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxMjAiIHJ4PSI2MCIgZmlsbD0iI0ZGNEIyQiIvPjxwYXRoIGQ9Ik00MCA2MEg4MCIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSI4IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNNjAgNDBWODAiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9zdmc+" alt="壹起嗨番" class="logo">
+        <h1 class="title">壹起嗨番公司简介</h1>
+        <h2 class="subtitle">INTRODUCTION TO YIQI HIFUN COMPANY</h2>
+    </div>
+
+    <div class="content">
+        <p class="intro-text">
+            宁夏壹起嗨番农业科技有限公司，成立于2022年3月，是一家专注于新质农业的产业运营商。目前公司围绕番茄这个赛道打造从项目的规划、设计、采购、运营一体化的产业运营模式。公司通过口感番茄产业闭环能力的打造（涉及到品种选择、自有种植、托管种植、加工、销售），将有门槛的活儿拿到企业平台来做，降低种植主体种植及销售的风险，建立有效的联农带农机制，同时有效带动村集体经济的收益。
+        </p>
+
+    <!-- Coze SDK -->
+    <script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.2.0-beta.2/libs/cn/index.js"></script>
+    <script>
+        new CozeWebSDK.WebChatClient({
+            config: {
+                bot_id: '7473846381405438002',
+            },
+            componentProps: {
+                title: 'Coze',
+            },
+            auth: {
+                type: 'token',
+                token: 'pat_yGgJGnxwbxPvOTewEvjIc9qndw2wDk5ULUGrgFk52dxV83Cl4ZPrbDOTpaRJCHuZ',
+                onRefreshToken: function () {
+                    return 'pat_yGgJGnxwbxPvOTewEvjIc9qndw2wDk5ULUGrgFk52dxV83Cl4ZPrbDOTpaRJCHuZ'
+                }
+            }
+        });
+    </script>
+</body>
+</html>
